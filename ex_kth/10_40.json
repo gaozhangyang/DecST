@@ -1,0 +1,19 @@
+{
+    "combine_params":{
+        "_type" : "choice",
+        "_value" : [
+                   {    "ex_name": "kth_c8_10To40", 
+                        "dataname":"kth", 
+                        "in_shape":[10,1,128,128],
+                        "hidC":8,
+                        "hidT":4, 
+                        "lr":0.01, 
+                        "gpu":1,
+                        "epoch_e":500,
+                        "batch_size":32,
+                        "val_batch_size":32,
+                        "pre_seq_length": 10,
+                        "aft_seq_length": 40}
+                ]
+    }
+}

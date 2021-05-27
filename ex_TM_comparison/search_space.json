@@ -1,0 +1,27 @@
+{
+    "combine_params":{
+        "_type" : "choice",
+        "_value" : [
+                   {    "ex_name": "DecST", 
+                        "model":"DecST",
+                        "gpu":2,
+                        "epoch_e":100,
+                        "batch_size":64,
+                        "val_batch_size":64},
+
+                    {    "ex_name": "PhyDNet", 
+                        "model":"PhyDNet",
+                        "gpu":3,
+                        "epoch_e":100,
+                        "batch_size":64,
+                        "val_batch_size":64}
+                ],
+
+        "_comments":
+                [
+
+                ],
+        "_ID":
+                ["LfjtBr2x"]
+    }
+}

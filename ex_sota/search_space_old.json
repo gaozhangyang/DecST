@@ -1,0 +1,46 @@
+{
+    "combine_params":{
+        "_type" : "choice",
+        "_value" : [
+                   {    "ex_name": "mmnist", 
+                        "dataname":"mmnist", 
+                        "in_shape":[10,1,64,64],
+                        "hidC":16,
+                        "hidT":10, 
+                        "lr":0.01, 
+                        "gpu":2,
+                        "epoch_e":600,
+                        "batch_size":64,
+                        "val_batch_size":64},
+
+                    {   "ex_name": "traffic", 
+                        "dataname":"traffic", 
+                        "in_shape":[4,2,32,32],
+                        "hidC":16,
+                        "hidT":4, 
+                        "lr":0.01, 
+                        "gpu":2,
+                        "epoch_e":600,
+                        "batch_size":128,
+                        "val_batch_size":128},
+
+                    {   "ex_name": "human", 
+                        "dataname":"human", 
+                        "in_shape":[4,3,128,128],
+                        "hidC":16,
+                        "hidT":4, 
+                        "lr":0.01, 
+                        "gpu":2,
+                        "epoch_e":600,
+                        "batch_size":32,
+                        "val_batch_size":32}
+                ],
+
+        "_comments":
+                [
+
+                ],
+        "_ID":
+                ["LfjtBr2x"]
+    }
+}

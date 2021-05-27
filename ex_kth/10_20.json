@@ -1,0 +1,17 @@
+{
+    "combine_params":{
+        "_type" : "choice",
+        "_value" : [
+                   {    "ex_name": "kitti_caltech_c8", 
+                        "dataname":"kitti_caltech", 
+                        "in_shape":[10,3,128,160],
+                        "hidC":4,
+                        "hidT":4, 
+                        "lr":0.01, 
+                        "gpu":1,
+                        "epoch_e":500,
+                        "batch_size":16,
+                        "val_batch_size":4}
+                ]
+    }
+}

@@ -1,0 +1,28 @@
+# nnictl experiment export ssY3qqgD -f ./csv/Enz.csv --type "csv"
+
+authorName: Zhangyang Gao
+experimentName: KTH_channel_comparison
+debug: True
+trialConcurrency: 15
+maxExecDuration: 500h
+maxTrialNum: 500
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: 10_40.json
+#choice: true, false
+useAnnotation: false
+
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner, GPTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: BatchTuner
+
+trial:
+  command: python main_conv.py 
+  codeDir: ./
+  gpuNum: 1
+
+localConfig:
+  gpuIndices: "1,2,3"
+  maxTrialNumPerGpu: 1
+  useActiveGpu: False

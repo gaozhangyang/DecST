@@ -1,0 +1,50 @@
+{
+    "combine_params":{
+        "_type" : "choice",
+        "_value" : [
+                    {"method":"DecST", "ex_name": "DecST2_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":6,"epoch_e":200},
+                    {"method":"DecST", "ex_name": "DecST2_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":3,"epoch_e":200},
+                    {"method":"DecST", "ex_name": "DecST2_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":3,"epoch_e":200}
+                ],
+
+        "_comments":
+                [
+                    {"method":"ST_ST", "ex_name": "ST_ST_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":2,"epoch_e":200},
+                    {"method":"ST_S", "ex_name": "ST_S_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":1,"epoch_e":200},
+                    {"method":"S_ST", "ex_name": "S_ST_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":0,"epoch_e":200},
+                    {"method":"S_ST", "ex_name": "S_ST_noUNet_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":0,"epoch_e":200,"UNet":false},
+                    
+                    {"method":"gXNet", "ex_name": "DecST_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":3,"epoch_e":200},
+                    {"method":"gXNet", "ex_name": "DecST_noX_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":6,"epoch_e":200,"XNet":false},
+                    {"method":"gXNet", "ex_name": "DecST_nogConv_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":3,"epoch_e":200,"gConv":false},
+                    {"method":"gXNet", "ex_name": "DecST_noIncep_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":6,"epoch_e":200,"Incep":false},
+                    {"method":"DecST", "ex_name": "DecST2_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.01, "gpu":6,"epoch_e":200},
+
+
+                    {"method":"ST_ST", "ex_name": "ST_ST_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":2,"epoch_e":200},
+                    {"method":"ST_S", "ex_name": "ST_S_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":1,"epoch_e":200},
+                    {"method":"S_ST", "ex_name": "S_ST_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":0,"epoch_e":200},
+                    {"method":"S_ST", "ex_name": "S_ST_noUNet_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":0,"epoch_e":200,"UNet":false},
+
+                    {"method":"gXNet", "ex_name": "DecST_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":3,"epoch_e":200},
+                    {"method":"gXNet", "ex_name": "DecST_noX_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":6,"epoch_e":200,"XNet":false},
+                    {"method":"gXNet", "ex_name": "DecST_nogConv_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":3,"epoch_e":200,"gConv":false},
+                    {"method":"gXNet", "ex_name": "DecST_noIncep_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":6,"epoch_e":200,"Incep":false},
+                    {"method":"DecST", "ex_name": "DecST2_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.01, "gpu":3,"epoch_e":200},
+
+
+                    {"method":"ST_ST", "ex_name": "ST_ST_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":2,"epoch_e":200},
+                    {"method":"ST_S", "ex_name": "ST_S_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":1,"epoch_e":200},
+                    {"method":"S_ST", "ex_name": "S_ST_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":0,"epoch_e":200},
+                    {"method":"S_ST", "ex_name": "S_ST_noUNet_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":0,"epoch_e":200,"UNet":false},
+                    
+                    {"method":"gXNet", "ex_name": "DecST_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":3,"epoch_e":200},
+                    {"method":"gXNet", "ex_name": "DecST_noX_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":6,"epoch_e":200,"XNet":false},
+                    {"method":"gXNet", "ex_name": "DecST_nogConv_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":3,"epoch_e":200,"gConv":false},
+                    {"method":"gXNet", "ex_name": "DecST_noIncep_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":6,"epoch_e":200,"Incep":false},
+                    {"method":"DecST", "ex_name": "DecST2_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.01, "gpu":3,"epoch_e":200}
+                ],
+        "_ID":
+            ["QVEutAM7"]
+    }
+}

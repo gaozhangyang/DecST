@@ -1,0 +1,38 @@
+{
+    "combine_params":{
+        "_type" : "choice",
+        "_value" : [
+                {"method":"S_ST", "ex_name": "S_ST_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.05, "gpu":0,"epoch_e":200},
+                {"method":"ST_S", "ex_name": "ST_S_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.05, "gpu":1,"epoch_e":200},
+                {"method":"ST_ST", "ex_name": "ST_ST_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.05, "gpu":2,"epoch_e":200},
+                {"method":"S_T", "ex_name": "S_T_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.05, "gpu":3,"epoch_e":200},
+                {"method":"ST_T", "ex_name": "ST_T_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.05, "gpu":6,"epoch_e":200},
+
+                   {"method":"S_ST", "ex_name": "S_ST_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.05, "gpu":0,"epoch_e":200},
+                   {"method":"ST_S", "ex_name": "ST_S_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.05, "gpu":1,"epoch_e":200},
+                   {"method":"ST_ST", "ex_name": "ST_ST_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.05, "gpu":2,"epoch_e":200},
+                    {"method":"S_T", "ex_name": "S_T_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.05, "gpu":3,"epoch_e":200},
+                    {"method":"ST_T", "ex_name": "ST_T_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.05, "gpu":6,"epoch_e":200},
+
+                    {"method":"S_ST", "ex_name": "S_ST_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.05, "gpu":0,"epoch_e":200},
+                    {"method":"ST_S", "ex_name": "ST_S_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.05, "gpu":1,"epoch_e":200},
+                    {"method":"ST_ST", "ex_name": "ST_ST_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.05, "gpu":2,"epoch_e":200},
+                    {"method":"S_T", "ex_name": "S_T_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.05, "gpu":3,"epoch_e":200},
+                    {"method":"ST_T", "ex_name": "ST_T_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.05, "gpu":6,"epoch_e":200}
+                ],
+
+        "_comments":
+                [
+                    {"method":"T_S", "ex_name": "T_S_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.05, "gpu":4,"epoch_e":200},
+                    {"method":"T_ST", "ex_name": "T_ST_traffic", "dataname":"traffic", "in_shape":[4,2,32,32], "lr":0.05, "gpu":5,"epoch_e":200},
+
+                    {"method":"T_S", "ex_name": "T_S_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.05, "gpu":4,"epoch_e":200},
+                    {"method":"T_ST", "ex_name": "T_ST_mmnist", "dataname":"mmnist", "in_shape":[10,1,64,64], "lr":0.05, "gpu":5,"epoch_e":200},
+
+                    {"method":"T_S", "ex_name": "T_S_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.05, "gpu":4,"epoch_e":200},
+                    {"method":"T_ST", "ex_name": "T_ST_human", "dataname":"human", "in_shape":[4,3,128,128], "lr":0.05, "gpu":5,"epoch_e":200}
+                ],
+        "_ID":
+            ["Vu9Ekqr6"]
+    }
+}
